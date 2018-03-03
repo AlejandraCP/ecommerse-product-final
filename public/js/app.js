@@ -1,4 +1,5 @@
-const cardGroup = $('.card-group');
+const cardGroup = $('.card-group-js');
+let output = '';
 console.log(cardGroup);
 
 page('/nike', getApi);
@@ -27,30 +28,25 @@ function getApi(e) {
   });
 
   const getApi = array => {
-    console.log(array);
-    console.log(array.results);
-    console.log(array.results[0].title);
-
     let results = array.results;
 
     results.forEach(element => {
-      console.log(element.title);  
-
-      cardGroup.html += `
-      <div class="card">
+      output += `
+      <div class="card col-12 col-sm-4 m-2">
         <img class="card-img-top" src="${element.thumbnail}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title" id="prueba">${element.title}</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">${element.title}</h5>
+          <p class="card-text"></p>
+        </div>
+        <div class="card-footer">
+          <input class="car btn btn-primary" type="button" value="AÑADIR AL CARRITO" price="${element.price}" title="${element.listing_type_id}" />
         </div>
       </div>
       `;
+      cardGroup.html(output);
     });
-
-    // console.log(array.results[0]);
-    // console.log(array.results[0].thumbnail); // imagen del producto
-    // console.log(array.results[0].price); //precio de producto
-    // console.log(array.results[0].title);
   };
+
+  let output = '';
 };
+
