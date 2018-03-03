@@ -5,7 +5,7 @@ page('/nike', getApi);
 page('/umbro', getApi);
 page("/addidas", getApi);
 page("/reebok", getApi);
-page("/just", getApi);
+page("/just do it", getApi);
 page("/puma", getApi);
 page("/fila", getApi);
 page("/joma", getApi);
