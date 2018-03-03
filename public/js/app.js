@@ -4,19 +4,22 @@ console.log(cardGroup);
 
 page('/nike', getApi);
 page('/umbro', getApi);
-// page('/addidas', sewred);
-// page('/reebok', strtyrtyd);
-// page('/just', swerwrd);
-// page('/puma', ssdsd);
-// page('/fila', sddd);
-// page('/joma', asd);
+page("/addidas", getApi);
+page("/reebok", getApi);
+page("/just", getApi);
+page("/puma", getApi);
+page("/fila", getApi);
+page("/joma", getApi);
 page();
 
 
-let url = 'https://api.mercadolibre.com/sites/MPE/search?condition=new&q=Nike';
 
-function getApi() {
-console.log()
+function getApi(e) {
+  let x = e.path;
+  var name = x.substr(1);
+
+  let url = `https://api.mercadolibre.com/sites/MPE/search?condition=new&q=${name}`;
+
   $.ajax({
     url: url,
     contentType: 'application/json',
@@ -28,11 +31,11 @@ console.log()
 
   const getApi = array => {
     console.log(array);
-    console.log(array.results);
-    console.log(array.results[0]);
-    console.log(array.results[0].thumbnail); // imagen del producto
-    console.log(array.results[0].price); //precio de producto
-    console.log(array.results[0].title);
+    // console.log(array.results);
+    // console.log(array.results[0]);
+    // console.log(array.results[0].thumbnail); // imagen del producto
+    // console.log(array.results[0].price); //precio de producto
+    // console.log(array.results[0].title);
   };
 }
 
