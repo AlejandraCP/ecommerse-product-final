@@ -1,25 +1,30 @@
 # E-commerce
 
-* **Track:** _Especialización Front-end_
-* **Curso:** _CONSTRUYE UNA SINGLE PAGE APP (SPA) MULTI-USUARIO CONSUMIENDO DATA REMOTA_
-* **Unidad:** _Producto final_
-
 ***
 
-## Flujo de trabajo
+## Objetivo
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+Construir un single page aplication SPA multiusuario consumiendo data remota del API de mercado libre. 
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+## Tecnologías usadas  
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
+- Jquery  
+- Boostrap 4  
+- Javascript  
+- Ecmascript 6  
+- API mercado libre  
+- Ajax  
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+ ## Resultado  
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+ ![Con titulo](assets/images/desktop.png "titulo")
+
+ #### Desarroladoras
+
+* **Rocci Escobar:** [GitHub Account](https://github.com/Rocciescobar).
+* **Alejandra Cabrera:** [GitHub Account](https://github.com/AlejandraCP). 
+ 
+ 
+ 
+
+
